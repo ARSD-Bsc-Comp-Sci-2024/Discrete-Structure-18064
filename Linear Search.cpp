@@ -15,9 +15,9 @@ class Lsearch{
 			for (int i=0; i<n;i++)
 				cin>>a[i];
 		}
-		int search(int n){
+		int search(int num){
 			for(int i=0; i<n; i++){
-				if(a[i]==n)
+				if(a[i]==num)
 					return i;
 			}
 			return -1;
@@ -31,7 +31,7 @@ int main(){
 	cin>>n;
 	Lsearch A(n);
 	A.input();
-	cout<<"\nEnter the element to be searchrd: "<<endl;
+	cout<<"\nEnter the element to be searched: "<<endl;
 	cin>>find;
 	res=A.search(find);
 	if (res<0){
