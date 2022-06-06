@@ -1,0 +1,8 @@
+This program to find the number of paths of length n between source and destination entered by user uses logic
+that using an adjacency matrix A of the graph, the number of path of length n between I and j can be found by calculating 
+A^n, then A^n[i][j] will give the number of paths.
+
+Source: https://stackoverflow.com/a/14272475
+
+Both the program are not exactly perfect and does not give result for adjacent vertex. 
+But they work for majority of combination of vertices.
