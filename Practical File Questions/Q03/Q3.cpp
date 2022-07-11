@@ -36,6 +36,18 @@ class RELATION{
                 a[x-1][y-1]=1;
 			}
 		}
+		void display()
+        {
+            cout<<"\nRelation Matrix=\n";
+            for(int i=0;i<n;i++)
+            {
+                for(int j=0;j<n;j++)
+                {
+                    cout<<a[i][j]<<" ";
+                }
+                cout<<endl;
+            }
+        }
         void reflexive(){
             for(int i=0; i<n; i++){
                 if(a[i][i]!=1){
@@ -74,6 +86,7 @@ class RELATION{
 int main(){
     RELATION r;
     r.input();
+    r.display();
     r.reflexive();
     r.symmetric();
     r.transitive();
